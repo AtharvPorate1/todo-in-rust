@@ -6,6 +6,13 @@ struct Commands{
     key: String
 }
 
+struct Todo{
+    id: u32,
+    task: String,
+    status: bool,
+}
+ 
+
 fn main() {
     let function = args().nth(1).expect("Please provide action to perform");
     let key = args().nth(2).expect("Please key to perform");
