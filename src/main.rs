@@ -1,10 +1,7 @@
 use std::env::args;
 use rusqlite::{params, Connection};
-
-
-
  
-
+// Next : Use tUI to make it more interactive
 fn main() {
 
     let conn = Connection::open("file.db").expect("Failed to open Database");
